@@ -143,6 +143,20 @@
                 @endforeach
               </div>
               @endhookwrapper
+              {{-- 優惠碼 --}}
+              <div id="coupon-wrap" class="mb-3">
+                <div v-if="!couponApplied" class="input-group input-group-sm">
+                  <input type="text" class="form-control" v-model="couponCode" placeholder="{{ __('coupon.enter_code') }}"
+                    @keyup.enter="applyCoupon" style="text-transform:uppercase">
+                  <button class="btn btn-outline-secondary" type="button" @click="applyCoupon">{{ __('coupon.apply') }}</button>
+                </div>
+                <div v-else class="d-flex align-items-center justify-content-between">
+                  <span class="text-success"><i class="bi bi-check-circle me-1"></i>@{{ couponCode }}</span>
+                  <button class="btn btn-sm btn-link text-danger p-0" @click="removeCoupon">{{ __('coupon.remove') }}</button>
+                </div>
+                <div v-if="couponError" class="text-danger small mt-1">@{{ couponError }}</div>
+              </div>
+
               <ul class="totals">
                 @foreach ($totals as $total)
                   <li><span>{{ $total['title'] }}</span><span>{{ $total['amount_format'] }}</span></li>
@@ -277,5 +291,40 @@
 
       $('#payment-methods-wrap').replaceWith('<div class="radio-line-wrap" id="payment-methods-wrap">' + html + '</div>');
     }
+  </script>
+
+  <script>
+    const couponApp = new Vue({
+      el: '#coupon-wrap',
+      data: {
+        couponCode:   '{{ $current['coupon_code'] ?? '' }}',
+        couponApplied: {{ !empty($current['coupon_code']) ? 'true' : 'false' }},
+        couponError:  '',
+      },
+      methods: {
+        applyCoupon() {
+          const code = this.couponCode.trim().toUpperCase();
+          if (!code) return;
+          this.couponError = '';
+          $http.post('/checkout/coupon', { code }).then((res) => {
+            this.couponCode    = code;
+            this.couponApplied = true;
+            updateCheckout('coupon_code', code);
+          }).catch((err) => {
+            this.couponError = (err.response && err.response.data && err.response.data.message)
+              ? err.response.data.message
+              : '{{ __('coupon.not_found') }}';
+          });
+        },
+        removeCoupon() {
+          $http.delete('/checkout/coupon').then(() => {
+            this.couponCode    = '';
+            this.couponApplied = false;
+            this.couponError   = '';
+            updateCheckout('coupon_code', null);
+          });
+        },
+      },
+    });
   </script>
 @endpush

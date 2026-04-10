@@ -79,6 +79,8 @@ return [
     'report'                 => '報表',
     'reports_sale_index'     => '商品銷售',
     'reports_view_index'     => '商品瀏覽',
+    'coupon'                 => '優惠券管理',
+    'coupons_index'          => '優惠券',
     'rma'                    => '售後服務管理',
     'rma_reason'             => '退換貨原因管理',
     'rma_reasons_index'      => '售後原因',

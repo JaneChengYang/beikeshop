@@ -19,6 +19,7 @@ class TotalService
 {
     protected const TOTAL_CODES = [
         'subtotal',
+        'coupon',
         'tax',
         'shipping',
         'customer_discount',

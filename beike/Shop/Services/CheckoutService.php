@@ -74,6 +74,7 @@ class CheckoutService
 
         $guestShippingAddress = $requestData['guest_shipping_address'] ?? [];
         $guestPaymentAddress  = $requestData['guest_payment_address']  ?? [];
+        $couponCode           = array_key_exists('coupon_code', $requestData) ? $requestData['coupon_code'] : false;
 
         hook_action('service.checkout.update.before', ['request_data' => $requestData, 'cart' => $this->cart]);
 
@@ -95,6 +96,9 @@ class CheckoutService
         }
         if ($guestPaymentAddress) {
             $this->updateGuestPaymentAddress($guestPaymentAddress);
+        }
+        if ($couponCode !== false) {
+            $this->cart->update(['coupon_code' => $couponCode ?: null]);
         }
 
         hook_action('service.checkout.update.after', ['request_data' => $requestData, 'checkout' => $this]);
@@ -120,6 +124,22 @@ class CheckoutService
 
             $order = OrderRepo::create($checkoutData);
             StateMachineService::getInstance($order)->changeStatus(StateMachineService::UNPAID, '', true);
+
+            // 記錄優惠券使用
+            $couponCode = $this->cart->coupon_code;
+            if ($couponCode) {
+                $coupon = \Beike\Models\Coupon::where('code', $couponCode)->first();
+                if ($coupon) {
+                    \Beike\Models\CouponUsage::create([
+                        'coupon_id'   => $coupon->id,
+                        'customer_id' => $customer?->id,
+                        'order_id'    => $order->id,
+                    ]);
+                    $coupon->increment('used_count');
+                    $this->cart->update(['coupon_code' => null]);
+                }
+            }
+
             CartRepo::clearSelectedCartProducts($customer);
 
             hook_action('service.checkout.confirm.after', ['order' => $order, 'cart' => $this->cart]);
@@ -274,6 +294,7 @@ class CheckoutService
                 'payment_method_code'    => $currentCart->payment_method_code,
                 'payment_method_name'    => $paymentMethod['name'] ?? '',
                 'extra'                  => $currentCart->extra,
+                'coupon_code'            => $currentCart->coupon_code,
             ],
             'shipping_require' => $shippingRequired,
             'country_id'       => (int) system_setting('base.country_id'),

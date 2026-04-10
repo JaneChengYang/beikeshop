@@ -261,7 +261,7 @@ class Sidebar extends Component
      */
     private function getOrderSubPrefix()
     {
-        $prefix = ['orders', 'rmas', 'rma_reasons'];
+        $prefix = ['orders', 'rmas', 'rma_reasons', 'coupons'];
 
         return hook_filter('admin.sidebar.order.prefix', $prefix);
     }
@@ -370,6 +370,7 @@ class Sidebar extends Component
             ['route' => 'orders.index', 'prefixes' => ['orders'], 'excludes' => ['orders.trashed']],
             ['route' => 'rmas.index', 'prefixes' => ['rmas']],
             ['route' => 'rma_reasons.index', 'prefixes' => ['rma_reasons']],
+            ['route' => 'coupons.index', 'prefixes' => ['coupons']],
             ['route' => 'orders.trashed', 'prefixes' => ['orders'], 'excludes' => ['orders.index', 'orders.show']],
         ];
 

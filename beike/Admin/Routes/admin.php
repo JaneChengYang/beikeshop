@@ -103,6 +103,12 @@ Route::prefix($adminName)
 
                 Route::get('countries/{country_id}/zones', [Controllers\ZoneController::class, 'listByCountry'])->name('countries.zones.index');
 
+                // 優惠券
+                Route::get('coupons', [Controllers\CouponController::class, 'index'])->name('coupons.index');
+                Route::post('coupons', [Controllers\CouponController::class, 'store'])->name('coupons.store');
+                Route::put('coupons/{coupon}', [Controllers\CouponController::class, 'update'])->name('coupons.update');
+                Route::delete('coupons/{coupon}', [Controllers\CouponController::class, 'destroy'])->name('coupons.destroy');
+
                 // 客户组
                 Route::middleware('can:customer_groups_index')->get('customer_groups', [Controllers\CustomerGroupController::class, 'index'])->name('customer_groups.index');
                 Route::middleware('can:customer_groups_create')->post('customer_groups', [Controllers\CustomerGroupController::class, 'store'])->name('customer_groups.store');

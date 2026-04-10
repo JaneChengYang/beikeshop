@@ -84,6 +84,8 @@ Route::prefix('/')
                 Route::put('checkout', [CheckoutController::class, 'update'])->name('checkout.update');
                 Route::get('checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
                 Route::post('checkout/confirm', [CheckoutController::class, 'confirm'])->name('checkout.confirm');
+                Route::post('checkout/coupon', [\Beike\Shop\Http\Controllers\CouponController::class, 'apply'])->name('checkout.coupon.apply');
+                Route::delete('checkout/coupon', [\Beike\Shop\Http\Controllers\CouponController::class, 'remove'])->name('checkout.coupon.remove');
                 Route::get('orders/{number}/pay', [OrderController::class, 'pay'])->name('orders.pay');
                 Route::post('orders/{number}/cancel', [OrderController::class, 'cancel'])->name('orders.cancel');
                 Route::post('orders/{number}/complete', [OrderController::class, 'complete'])->name('orders.complete');
