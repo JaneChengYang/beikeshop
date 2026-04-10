@@ -9,7 +9,7 @@
             <el-input v-model="form.name" placeholder="{{ __('address.name') }}"></el-input>
           </el-form-item>
           <el-form-item label="{{ __('address.phone') }}" class="w-50 ms-3">
-            <el-input maxlength="11" v-model="form.phone" type="number" placeholder="{{ __('address.phone') }}"></el-input>
+            <el-input maxlength="10" v-model="form.phone" type="number" placeholder="{{ __('address.phone') }}"></el-input>
           </el-form-item>
         </div>
         {{-- Email（訪客） --}}
