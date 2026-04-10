@@ -6,3 +6,11 @@
 !Paypal
 !Social
 !Stripe
+!Tappay
+!Tappay/**
+!TappayLinePay
+!TappayLinePay/**
+!TappayJkoPay
+!TappayJkoPay/**
+!TappayEasyWallet
+!TappayEasyWallet/**

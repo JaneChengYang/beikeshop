@@ -20,7 +20,7 @@ return [
     'index'      => '編輯地址',
     'name'       => '姓名',
     'phone'      => '電話號碼',
-    'post_code'  => '郵編',
-    'zone'       => '省份',
-    'zone_id'    => '省份ID',
+    'post_code'  => '郵遞區號',
+    'zone'       => '縣市',
+    'zone_id'    => '縣市',
 ];

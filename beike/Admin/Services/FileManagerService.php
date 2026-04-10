@@ -297,7 +297,7 @@ class FileManagerService
         $originName = $this->getUniqueFileName($savePath, $originName);
         $filePath   = $file->storeAs($this->basePath . $savePath, $originName, 'catalog');
 
-        return asset('catalog/' . $filePath);
+        return asset('catalog/' . ltrim($filePath, '/'));
     }
 
     public function sanitizePath($path): string
@@ -387,7 +387,7 @@ class FileManagerService
         }
 
         return [
-            'path'       => '/' . $path,
+            'path'       => $path,
             'name'       => $baseName,
             'origin_url' => image_origin($path),
             'url'        => image_resize($path),

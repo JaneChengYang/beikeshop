@@ -1,0 +1,20 @@
+{
+    "code": "tappay_jko_pay",
+    "name": {
+        "zh_cn": "街口支付",
+        "zh_hk": "街口支付",
+        "en": "JKO Pay"
+    },
+    "description": {
+        "zh_cn": "透過 TapPay 使用街口支付",
+        "zh_hk": "透過 TapPay 使用街口支付",
+        "en": "Pay with JKO Pay via TapPay"
+    },
+    "type": "payment",
+    "version": "v1.0.0",
+    "icon": "/image/logo.png",
+    "author": {
+        "name": "Custom",
+        "email": ""
+    }
+}

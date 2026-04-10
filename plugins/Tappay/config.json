@@ -1,0 +1,20 @@
+{
+    "code": "tappay",
+    "name": {
+        "zh_hk": "信用卡",
+        "zh_cn": "信用卡",
+        "en": "Credit Card"
+    },
+    "description": {
+        "zh_hk": "TapPay 信用卡付款",
+        "zh_cn": "TapPay 信用卡付款",
+        "en": "TapPay Credit Card Payment"
+    },
+    "type": "payment",
+    "version": "v1.0.0",
+    "icon": "/image/logo.png",
+    "author": {
+        "name": "Custom",
+        "email": ""
+    }
+}

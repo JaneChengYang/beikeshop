@@ -18,7 +18,7 @@ return [
     'enter_name'      => '請輸入姓名',
     'enter_phone'     => '請輸入聯繫電話',
     'enter_address'   => '請輸入詳細地址 1',
-    'select_province' => '請選擇省份',
+    'select_province' => '請選擇縣市',
     'enter_city'      => '請填寫城市',
     'confirm_delete'  => '確定要刪除地址嗎？ ',
     'hint'            => '提示',

@@ -11,7 +11,7 @@
 
 return [
     'way'            => '方式',
-    'flat_shipping'  => '固定运费',
+    'flat_shipping'  => '宅配到府',
     'percentage'     => '百分比',
     'shipping_value' => '运费值',
 ];

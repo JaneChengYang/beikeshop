@@ -1,12 +1,14 @@
 {
     "code": "flat_shipping",
     "name": {
-        "zh_cn": "固定运费",
-        "en": "Flat Rate Shipping"
+        "zh_cn": "宅配到府",
+        "zh_hk": "宅配到府",
+        "en": "Home Delivery"
     },
     "description": {
-        "zh_cn": "按订单总额收取固定运费",
-        "en": "Fixed shipping fee by order total"
+        "zh_cn": "宅配到府服務",
+        "zh_hk": "宅配到府服務",
+        "en": "Home delivery service"
     },
     "type": "shipping",
     "version": "v1.0.0",

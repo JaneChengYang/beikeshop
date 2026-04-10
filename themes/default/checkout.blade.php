@@ -71,7 +71,7 @@
                         data-key="shipping_method_code" data-value="{{ $shipping['code'] }}">
                         <div class="left">
                           <span class="radio"></span>
-                          <img src="{{ $shipping['icon'] }}" class="img-fluid" alt="{{ $shipping['name'] }}">
+                          <img src="{{ $shipping['icon'] }}" class="img-fluid d-none" alt="{{ $shipping['name'] }}">
                         </div>
                         <div class="right ms-2">
                           <div class="title">{{ $shipping['name'] }}</div>
@@ -247,7 +247,7 @@
           html += `<div class="radio-line-item d-flex align-items-center ${shipping_method_code == quote.code ? 'active' : ''}" data-key="shipping_method_code" data-value="${quote.code}">
           <div class="left">
             <span class="radio"></span>
-            <img src="${quote.icon}" class="img-fluid" alt="${quote.name}">
+            <img src="${quote.icon}" class="img-fluid d-none" alt="${quote.name}">
           </div>
           <div class="right ms-2">
             <div class="title">${quote.name}</div>

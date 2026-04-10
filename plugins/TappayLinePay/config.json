@@ -1,0 +1,20 @@
+{
+    "code": "tappay_line_pay",
+    "name": {
+        "zh_cn": "LINE Pay",
+        "zh_hk": "LINE Pay",
+        "en": "LINE Pay"
+    },
+    "description": {
+        "zh_cn": "透過 TapPay 使用 LINE Pay 付款",
+        "zh_hk": "透過 TapPay 使用 LINE Pay 付款",
+        "en": "Pay with LINE Pay via TapPay"
+    },
+    "type": "payment",
+    "version": "v1.0.0",
+    "icon": "/image/logo.png",
+    "author": {
+        "name": "Custom",
+        "email": ""
+    }
+}

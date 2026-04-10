@@ -1,0 +1,20 @@
+{
+    "code": "tappay_easy_wallet",
+    "name": {
+        "zh_cn": "悠遊付",
+        "zh_hk": "悠遊付",
+        "en": "Easy Wallet"
+    },
+    "description": {
+        "zh_cn": "透過 TapPay 使用悠遊付",
+        "zh_hk": "透過 TapPay 使用悠遊付",
+        "en": "Pay with Easy Wallet via TapPay"
+    },
+    "type": "payment",
+    "version": "v1.0.0",
+    "icon": "/image/logo.png",
+    "author": {
+        "name": "Custom",
+        "email": ""
+    }
+}
