@@ -71,6 +71,8 @@ return [
     'return'               => '返回',
     'sales'                => '銷量',
     'save'                 => '保存',
+    'search'               => '搜尋',
+    'pagination'           => '顯示第 :first – :last 筆 / 共 :total 筆（第 :last_page 頁）',
     'save_edit'            => '儲存並繼續編輯',
     'save_new'             => '儲存並繼續新建',
     'save_return'          => '儲存並返回',

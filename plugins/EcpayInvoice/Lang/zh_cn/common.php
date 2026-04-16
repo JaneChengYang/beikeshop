@@ -1,0 +1,55 @@
+<?php
+
+return [
+    'menu_title' => '发票管理',
+
+    'invoice_title'    => '发票信息',
+    'carrier_type'     => '发票类型',
+    'carrier_personal' => '个人电子发票',
+    'carrier_mobile'   => '手机条码载具',
+    'carrier_love'     => '捐赠发票',
+    'carrier_company'  => '公司发票',
+
+    'status_pending' => '待开立',
+    'status_issued'  => '已开立',
+    'status_failed'  => '开立失败',
+    'status_void'    => '已作废',
+
+    'invoice_number'  => '发票号码',
+    'random_number'   => '随机码',
+    'issued_at'       => '开立时间',
+    'failed_reason'   => '失败原因',
+
+    'carrier_format_error'       => '手机条码格式错误（/XXXXXXX，7码大写英数）',
+    'carrier_valid'              => '条码验证成功',
+    'carrier_invalid'            => '条码不存在或无效',
+    'tax_id_placeholder'         => '统一编号（8码数字）',
+    'tax_id_format_error'        => '统一编号格式错误，请输入 8 码数字',
+    'company_title_placeholder'  => '公司抬头',
+    'love_code_placeholder'      => '输入爱心码或搜索机构名称',
+    'love_code_required'         => '请输入捐赠爱心码',
+    'search'                     => '搜索',
+    'verify'                     => '验证',
+    'no_results'                 => '无符合结果',
+    'invoice_disabled'           => '发票功能目前未开启',
+
+    'btn_issue'          => '补开发票',
+    'btn_void'           => '作废',
+    'btn_allowance'      => '折让',
+    'confirm_issue'      => '确定要手动补开此发票？',
+    'confirm_void'       => '确定要作废此发票？此操作不可撤销。',
+    'issue_success'      => '发票开立成功',
+    'issue_fail'         => '发票开立失败',
+    'void_success'       => '作废成功',
+    'void_fail'          => '作废失败',
+    'allowance_success'  => '折让成功',
+    'allowance_fail'     => '折让失败',
+    'cannot_issue'       => '此发票状态不允许补开',
+    'cannot_void'        => '此发票状态不允许作废',
+    'cannot_allowance'   => '此发票状态不允许折让',
+    'allowance_desc'     => '折让原因／品名',
+    'allowance_amount'   => '折让金额（元）',
+    'allowance_input_error' => '请填写折让原因及金额',
+
+    'search_placeholder' => '订单编号 / 发票号码',
+];

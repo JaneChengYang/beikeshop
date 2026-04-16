@@ -1,0 +1,55 @@
+<?php
+
+return [
+    'menu_title' => 'Invoice Management',
+
+    'invoice_title'    => 'Invoice Info',
+    'carrier_type'     => 'Invoice Type',
+    'carrier_personal' => 'Personal E-Invoice',
+    'carrier_mobile'   => 'Mobile Barcode Carrier',
+    'carrier_love'     => 'Donation Invoice',
+    'carrier_company'  => 'Company Invoice',
+
+    'status_pending' => 'Pending',
+    'status_issued'  => 'Issued',
+    'status_failed'  => 'Failed',
+    'status_void'    => 'Voided',
+
+    'invoice_number'  => 'Invoice Number',
+    'random_number'   => 'Random Code',
+    'issued_at'       => 'Issued At',
+    'failed_reason'   => 'Failure Reason',
+
+    'carrier_format_error'       => 'Mobile carrier format error (/XXXXXXX, 7 uppercase alphanumeric)',
+    'carrier_valid'              => 'Carrier verified successfully',
+    'carrier_invalid'            => 'Carrier not found or invalid',
+    'tax_id_placeholder'         => 'Tax ID (8 digits)',
+    'tax_id_format_error'        => 'Tax ID must be 8 digits',
+    'company_title_placeholder'  => 'Company Name',
+    'love_code_placeholder'      => 'Enter love code or search organization',
+    'love_code_required'         => 'Please enter a donation love code',
+    'search'                     => 'Search',
+    'verify'                     => 'Verify',
+    'no_results'                 => 'No results found',
+    'invoice_disabled'           => 'Invoice feature is currently disabled',
+
+    'btn_issue'          => 'Issue Invoice',
+    'btn_void'           => 'Void',
+    'btn_allowance'      => 'Allowance',
+    'confirm_issue'      => 'Issue this invoice manually?',
+    'confirm_void'       => 'Void this invoice? This cannot be undone.',
+    'issue_success'      => 'Invoice issued successfully',
+    'issue_fail'         => 'Failed to issue invoice',
+    'void_success'       => 'Invoice voided successfully',
+    'void_fail'          => 'Failed to void invoice',
+    'allowance_success'  => 'Allowance applied successfully',
+    'allowance_fail'     => 'Failed to apply allowance',
+    'cannot_issue'       => 'This invoice cannot be reissued',
+    'cannot_void'        => 'This invoice cannot be voided',
+    'cannot_allowance'   => 'This invoice cannot have allowance applied',
+    'allowance_desc'     => 'Allowance Description',
+    'allowance_amount'   => 'Allowance Amount (NTD)',
+    'allowance_input_error' => 'Please fill in description and amount',
+
+    'search_placeholder' => 'Order number / Invoice number',
+];

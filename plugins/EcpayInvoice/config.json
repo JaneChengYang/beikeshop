@@ -1,0 +1,20 @@
+{
+    "code": "ecpay_invoice",
+    "name": {
+        "zh_cn": "电子发票（绿界）",
+        "zh_hk": "電子發票（綠界）",
+        "en": "E-Invoice (ECPay)"
+    },
+    "description": {
+        "zh_cn": "透过绿界科技 API 自动开立台湾电子发票",
+        "zh_hk": "透過綠界科技 API 自動開立台灣電子發票",
+        "en": "Automatically issue Taiwan e-invoices via ECPay API"
+    },
+    "type": "feature",
+    "version": "v1.0.0",
+    "icon": "/image/logo.png",
+    "author": {
+        "name": "Custom",
+        "email": ""
+    }
+}
