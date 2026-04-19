@@ -230,7 +230,7 @@
           this.name = this.linkDialog.data.find(e => e.id == this.link.value).name;
         }
 
-        let links = JSON.parse(JSON.stringify(this.link)); // type 类型切换时，不需要更新视图
+        let links = JSON.parse(JSON.stringify(this.link)); // type 型別切換時，不需要更新檢視
         this.$emit("input", links);
         this.linkDialog.show = false;
         this.$nextTick(() => {

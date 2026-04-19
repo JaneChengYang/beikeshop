@@ -73,13 +73,13 @@ Vue.component('module-editor-image402', {
   <script>
     register = @json($register);
 
-    // 定义模块的配置项
+    // 定義模組的配置項
     register.make = {
       style: {
         background_color: ''
       },
       floor: languagesFill(''),
-      module_size: 'container',// 窄屏、宽屏、全屏
+      module_size: 'container',// 窄屏、寬屏、全屏
       title: languagesFill('{{ __('admin/builder.text_set_title') }}'),
       sub_title: languagesFill('{{ __('admin/builder.text_set_subtitle') }}'),
       images: [

@@ -8,14 +8,14 @@
     <base href="{{ $shop_base_url }}">
 
     <!-- Title and Meta Description -->
-    <title>@yield('title', system_setting('base.meta_title', 'BeikeShop开源好用的跨境电商系统'))</title>
+    <title>@yield('title', system_setting('base.meta_title', 'BeikeShop開源好用的跨境電商系統'))</title>
     <meta name="keywords" content="@yield('keywords', system_setting('base.meta_keywords'))">
     <meta name="description" content="@yield('description', system_setting('base.meta_description'))">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:site_name" content="{{ system_setting('base.meta_title', 'BeikeShop') }}">
     <meta property="og:url" content="{{ request()->url() }}">
-    <meta property="og:title" content="@yield('title', system_setting('base.meta_title', 'BeikeShop开源好用的跨境电商系统'))">
+    <meta property="og:title" content="@yield('title', system_setting('base.meta_title', 'BeikeShop開源好用的跨境電商系統'))">
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:description" content="@yield('description', system_setting('base.meta_description'))">
     <meta property="og:image" content="@yield('og_image', image_origin(system_setting('base.logo')))">
@@ -25,7 +25,7 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('title', system_setting('base.meta_title', 'BeikeShop开源好用的跨境电商系统'))">
+    <meta name="twitter:title" content="@yield('title', system_setting('base.meta_title', 'BeikeShop開源好用的跨境電商系統'))">
     <meta name="twitter:description" content="@yield('description', system_setting('base.meta_description'))">
 
     <!-- Generator Meta -->
@@ -78,7 +78,7 @@
       productImageOriginHeight: @json((int)system_setting('base.product_image_origin_height', 800)),
     }
 
-    // 如果页面使用了ElementUI，且当前语言不是中文，则加载对应的语言包
+    // 如果頁面使用了ElementUI，且當前語言不是中文，則載入對應的語言包
     @if (locale() != 'zh_cn')
     if (typeof ELEMENT !== 'undefined') {
         const elLocale = '{{ asset('vendor/element-ui/language/'.locale().'.js') }}';

@@ -12,9 +12,9 @@ return [
     'decimal_point'     => '.',
     'thousand_point'    => ',',
     'currencies_index'  => '貨幣列表',
-    'currencies_create' => '創建貨幣',
+    'currencies_create' => '建立貨幣',
     'currencies_show'   => '貨幣詳情',
     'currencies_update' => '更新貨幣',
     'currencies_delete' => '刪除貨幣',
-    'order_exist'       => '該貨幣有訂單正在使用，無法删除！',
+    'order_exist'       => '該貨幣有訂單正在使用，無法刪除！',
 ];

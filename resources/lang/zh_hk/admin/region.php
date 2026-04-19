@@ -12,7 +12,7 @@
 return [
     'index'          => '區域組',
     'regions_index'  => '區域組列表',
-    'regions_create' => '創建區域組',
+    'regions_create' => '建立區域組',
     'regions_show'   => '區域組詳情',
     'regions_update' => '更新區域組',
     'regions_delete' => '刪除區域組',

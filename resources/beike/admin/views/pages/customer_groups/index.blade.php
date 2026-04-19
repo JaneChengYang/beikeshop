@@ -129,16 +129,16 @@
             id: null,
             name: {},
             description: {},
-            total: '', //消费额度
+            total: '', //消費額度
             level: '1',
             discount_factor: '', // 折扣率
-            reward_point_factor: '', // 奖励积分系数使用积分系数
-            use_point_factor: '', // 使用积分系数
+            reward_point_factor: '', // 獎勵積分系數使用積分系數
+            use_point_factor: '', // 使用積分系數
           },
         },
 
         rules: {
-          // password: [{required: true,message: '请输入密码',trigger: 'blur'}, ],
+          // password: [{required: true,message: '請輸入密碼',trigger: 'blur'}, ],
         },
 
         @hook('admin.customer_group.index.vue.data')
@@ -161,11 +161,11 @@
               id: group.id,
               name: {},
               description: {},
-              total: group.total, //消费额度
-              level: group.level, //消费额度
+              total: group.total, //消費額度
+              level: group.level, //消費額度
               discount_factor: group.discount_factor, // 折扣率
-              reward_point_factor: group.reward_point_factor, // 奖励积分系数使用积分系数
-              use_point_factor: group.use_point_factor, // 使用积分系数
+              reward_point_factor: group.reward_point_factor, // 獎勵積分系數使用積分系數
+              use_point_factor: group.use_point_factor, // 使用積分系數
               status: 1,
             }
 

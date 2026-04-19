@@ -173,14 +173,14 @@ Vue.component('module-editor-tab-product', {
   <script>
     register = @json($register);
 
-    // 定义模块的配置项
+    // 定義模組的配置項
     register.make = {
       style: {
         background_color: ''
       },
       editableTabsValue: '0',
       floor: languagesFill(''),
-      module_size: 'container-fluid',// 窄屏、宽屏、全屏
+      module_size: 'container-fluid',// 窄屏、寬屏、全屏
       tabs: [{title: languagesFill('Tab 1'), products: []}],
       title: languagesFill('{{ __('admin/builder.text_module_title') }}'),
     }

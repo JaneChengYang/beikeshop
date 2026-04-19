@@ -10,16 +10,16 @@
  */
 
 return [
-    'index'             => '稅率設置',
-    'tax_classes_index' => '稅類設置',
+    'index'             => '稅率設定',
+    'tax_classes_index' => '稅類設定',
     'tax'               => '稅種',
     'tax_rate'          => '稅率',
-    'type'              => '類型',
+    'type'              => '型別',
     'area'              => '區域',
     'percentage'        => '百分比',
     'fixed_tax_rate'    => '固定稅率',
     'tax_rates_index'   => '稅率列表',
-    'tax_rates_create'  => '創建稅率',
+    'tax_rates_create'  => '建立稅率',
     'tax_rates_show'    => '稅率詳情',
     'tax_rates_update'  => '更新稅率',
     'tax_rates_delete'  => '刪除稅率',

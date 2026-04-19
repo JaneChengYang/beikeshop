@@ -715,7 +715,7 @@
     })
 
     function submitBeforeFormat() {
-      // 关闭多规格提交 清空 variables
+      // 關閉多規格提交 清空 variables
       if (!app.editing.isVariable) {
         app.source.variables = [];
       }
@@ -799,7 +799,7 @@
       },
 
       computed: {
-        // variant value 重复次数
+        // variant value 重複次數
         variantValueRepetitions() {
           var repeats = [];
           var repeat = 1;
@@ -807,7 +807,7 @@
             repeat *= this.form.variables[index + 1].values.length;
             repeats[index] = repeat;
           }
-          // 最后一组只重复1次
+          // 最後一組只重複1次
           repeats.push(1);
           return repeats;
         },
@@ -835,7 +835,7 @@
 
       beforeMount() {
         let variables = @json(old('variables', $product->variables) ?? []);
-        // 修复表单提交报错后，编辑好的规格不存在问题，old 返回的规格是字符串，variables 如果是字符串，需要转数组
+        // 修復表單提交報錯後，編輯好的規格不存在問題，old 返回的規格是字串，variables 如果是字串，需要轉陣列
         if (typeof variables === 'string') {
           variables = JSON.parse(variables);
         }
@@ -856,19 +856,19 @@
         'source.variables': {
           deep: true,
           handler: function (val) {
-            // 原始规格数据变动，过滤有效规格并同步至 form.variables
+            // 原始規格資料變動，過濾有效規格並同步至 form.variables
             let variants = [];
             const sourceVariants = JSON.parse(JSON.stringify(this.source.variables));
             for (var i = 0; i < sourceVariants.length; i++) {
               let sourceVariant = sourceVariants[i];
-              // 排除掉没有规格值的
+              // 排除掉沒有規格值的
               if (sourceVariant.values.length > 0) {
                 variants.push(sourceVariant);
               }
             }
 
             this.form.variables = variants;
-            // 在 variablesBatch.variables 生成对应的 variants 的index
+            // 在 variablesBatch.variables 生成對應的 variants 的index
             this.variablesBatch.variables = variants.map((v, i) => '');
 
             setTimeout(() => {$('select[name="weight_class"]').trigger('change')}, 200);
@@ -901,7 +901,7 @@
           }
         },
 
-        // 视频数据格式化 type
+        // 影片資料格式化 type
         videoDataFormat() {
           const videoPath = @json(old('video', $product->video ?? ''));
 
@@ -924,7 +924,7 @@
           }
         },
 
-        // 视频数据提交的时候格式化
+        // 影片資料提交的時候格式化
         videoSubmitFormat() {
           if (this.form.video.videoType == 'iframe') {
             this.form.video.path = this.form.video.iframe;
@@ -1023,14 +1023,14 @@
         },
 
         batchSettingVariant() {
-          // 要修改的 skuIndex 下标
+          // 要修改的 skuIndex 下標
           let setSkuIndex = [];
           const skus = JSON.parse(JSON.stringify(this.form.skus));
 
           skus.forEach((sku, skuIndex) => {
             this.variablesBatch.variables.forEach((v, i) => {
               if (v === '') {
-                // sku.variants 数据中 i 的值修改为 ‘’
+                // sku.variants 資料中 i 的值修改為 ‘’
                 sku.variants[i] = '';
               }
             })
@@ -1040,7 +1040,7 @@
             }
           })
 
-          // 修改 skuIndex 下标对应的 sku
+          // 修改 skuIndex 下標對應的 sku
           setSkuIndex.forEach((index) => {
             if (this.variablesBatch.model) {
               this.form.skus[index].model = this.variablesBatch.model + '-' + (index + 1);
@@ -1069,7 +1069,7 @@
             @stack('admin.product.edit.vue.method.batchSettingVariant')
           })
 
-          // this.variablesBatch 对象内除了 variables 之外的值都清空
+          // this.variablesBatch 物件內除了 variables 之外的值都清空
           for (let key in this.variablesBatch) {
             if (key !== 'variables') {
               this.variablesBatch[key] = '';
@@ -1089,13 +1089,13 @@
             }
 
             if (variantValueIndex !== null) {
-              if (variantValueIndex == -1) { // 创建
+              if (variantValueIndex == -1) { // 建立
                 this.source.variables[variantIndex].values.push({name, image: ''});
               } else {
                 this.source.variables[variantIndex].values[variantValueIndex].name = name;
               }
             } else {
-              if (variantIndex == -1) { // 创建
+              if (variantIndex == -1) { // 建立
                 this.source.variables.push({name, values: [], isImage: false});
               } else {
                 this.source.variables[variantIndex].name = name;
@@ -1118,10 +1118,10 @@
 
         removeSourceVariantValue(variantIndex, variantValueIndex) {
           this.source.variables[variantIndex].values.splice(variantValueIndex, 1);
-          // 找出 this.form.skus 中 variants[variantIndex] === variantValueIndex 的 sku，删除
+          // 找出 this.form.skus 中 variants[variantIndex] === variantValueIndex 的 sku，刪除
           this.form.skus = this.form.skus.filter(sku => sku.variants[variantIndex] * 1 !== variantValueIndex * 1);
 
-          // 根据现在的 this.source.variables values 重新生成迪卡尔积 ['0,0', '0,1']...
+          // 根據現在的 this.source.variables values 重新生成迪卡爾積 ['0,0', '0,1']...
           const variants = this.source.variables.map(e => e.values.map((v, i) => i));
           const cartesian = this.cartesian(...variants);
 
@@ -1156,10 +1156,10 @@
             name = {};
           } else {
             if (variantValueIndex !== null) {
-              // 编辑 variant value
+              // 編輯 variant value
               name = this.source.variables[variantIndex].values[variantValueIndex].name;
             } else {
-              // 编辑 variant
+              // 編輯 variant
               name = this.source.variables[variantIndex].name;
             }
           }
@@ -1213,10 +1213,10 @@
         },
 
         randomValue(len, type) {
-          len = len || 32;  // 默认长度为 32
+          len = len || 32;  // 預設長度為 32
           var chars;
 
-          // 根据 type 选择字符集
+          // 根據 type 選擇字元集
           switch (type) {
             case 'number':
               chars = '0123456789';
@@ -1285,7 +1285,7 @@
             return;
           }
 
-          // 找出已存在的组合
+          // 找出已存在的組合
           const productVariantCombos = this.form.skus.map(v => v.variants.join()); // ['0,0,0', '0,0,1']
           let skus = [];
           for (var i = 0; i < combos.length; i++) {
@@ -1313,7 +1313,7 @@
           this.form.skus = skus;
         },
 
-        // 规格值拖拽
+        // 規格值拖拽
         swapSourceVariantValue(e, variantIndex) {
           this.form.skus.forEach(function (sku) {
             const oldIndex = parseInt(sku.variants[variantIndex]);
@@ -1344,7 +1344,7 @@
     });
 
     function makeVariableIndexes() {
-      // 每组值重复次数
+      // 每組值重複次數
       var repeats = app.variantValueRepetitions;
       var results = [];
 
@@ -1396,14 +1396,14 @@
 
       $('select[name="weight_class"]').trigger('change');
 
-      // skus[*][sku] 只能填写 数字、字母、中横线、下划线
+      // skus[*][sku] 只能填寫 數字、字母、中橫線、下劃線
       $(document).on('input', 'input[name^="skus"][name$="[sku]"]', function () {
         $(this).val($(this).val().replace(/[^a-zA-Z0-9-_]/g, ''));
         $(this)[0].dispatchEvent(new Event('input'));
       });
     });
 
-    // 回车键 功能修改为 tab建的功能
+    // 回車鍵 功能修改為 tab建的功能
     $(document).on('keydown', '*', function (e) {
       if (e.keyCode == 13) {
         e.preventDefault();

@@ -69,7 +69,7 @@
                   <div class="pb-images-selector" v-for="(item, index) in form.services.items" :key="index">
                     <div class="selector-head" @click="selectorShow(index)">
                       <div class="left">
-                        <el-tooltip class="icon-rank" effect="dark" content="拖动排序" placement="left">
+                        <el-tooltip class="icon-rank" effect="dark" content="拖動排序" placement="left">
                           <i class="el-icon-rank"></i>
                         </el-tooltip>
 
@@ -223,7 +223,7 @@
         device: 'pc',
         form: @json($design_settings),
       },
-      // 侦听器
+      // 偵聽器
       watch: {
         form: {
           handler: function(val, oldVal) {
@@ -232,7 +232,7 @@
           deep: true,
         }
       },
-      // 组件方法
+      // 元件方法
       methods: {
         footerUpdate: bk.debounce(function() {
           $http.post('design_footer/builder/preview', this.form, {hload: true}).then((res) => {
@@ -289,7 +289,7 @@
         $('#preview-iframe').on('load', function(event) {
           previewWindow = document.getElementById("preview-iframe").contentWindow;
 
-          // 页面滚动到最底部
+          // 頁面滾動到最底部
           $(previewWindow.document).ready(function() {
             previewWindow.scrollTo(0, $(previewWindow.document).height());
           });

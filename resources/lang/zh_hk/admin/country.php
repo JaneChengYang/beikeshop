@@ -12,7 +12,7 @@ return [
     'country_name'     => '國家名稱',
 
     'countries_index'  => '國家列表',
-    'countries_create' => '創建國家',
+    'countries_create' => '建立國家',
     'countries_update' => '更新國家',
     'countries_delete' => '刪除國家',
 ];

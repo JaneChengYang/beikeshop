@@ -13,7 +13,7 @@ return [
     'added_to_cart'            => '已加入購物車',
     'all'                      => '全部',
     'cart_empty'               => '您的購物車是空的',
-    'check_cart'               => '查看購物車',
+    'check_cart'               => '檢視購物車',
     'commodity'                => '商品',
     'customer_discount'        => '會員優惠',
     'delete'                   => '刪除',

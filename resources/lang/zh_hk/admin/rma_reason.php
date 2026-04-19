@@ -11,7 +11,7 @@
 
 return [
     'rma_reasons_index'  => '原因列表',
-    'rma_reasons_create' => '創建原因',
+    'rma_reasons_create' => '建立原因',
     'rma_reasons_update' => '更新原因',
     'rma_reasons_delete' => '刪除原因',
 ];

@@ -14,7 +14,7 @@ return [
     'thousand_point' => ',',
     'name'           => '名稱',
     'code'           => '編碼',
-    'icon'           => '圖標',
+    'icon'           => '圖示',
     'symbol_left'    => '左符號',
     'symbol_right'   => '右符號',
     'value'          => '匯率值',

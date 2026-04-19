@@ -9,6 +9,6 @@
  * @modified   2022-07-28 20:59:38
  */
 return [
-    'title'   => '标题',
-    'content' => '内容',
+    'title'   => '標題',
+    'content' => '內容',
 ];

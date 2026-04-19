@@ -153,7 +153,7 @@
         @hook('admin.region.index.vue.data')
       },
 
-      // 在挂载开始之前被调用:相关的 render 函数首次被调用
+      // 在掛載開始之前被呼叫:相關的 render 函式首次被呼叫
       beforeMount() {
         $http.get(`countries/${this.source.country_id}/zones`).then((res) => {
           this.dialog.zones = [

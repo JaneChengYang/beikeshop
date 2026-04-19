@@ -15,7 +15,7 @@ return [
     'address_2'  => '地址2',
     'country'    => '國家',
     'country_id' => '國家ID',
-    'default'    => '默認地址',
+    'default'    => '預設地址',
     'enter_city' => '輸入地址',
     'index'      => '編輯地址',
     'name'       => '姓名',

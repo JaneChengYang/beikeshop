@@ -10,7 +10,7 @@
  */
 
 return [
-    'add_new_address'          => '添加新地址',
+    'add_new_address'          => '新增新地址',
     'address'                  => '配送地址',
     'cart_totals'              => '購物車總數',
     'check_form'               => '請檢查表單是否填寫正確',
@@ -23,7 +23,7 @@ return [
     'enter_address'            => '請輸入詳細地址 1',
     'enter_city'               => '請填寫城市',
     'enter_name'               => '請輸入姓名',
-    'enter_phone'              => '請輸入聯繫電話',
+    'enter_phone'              => '請輸入聯絡電話',
     'error_address'            => '請選擇地址',
     'error_payment_address'    => '請選擇賬單地址',
     'index'                    => '結賬',

@@ -23,10 +23,10 @@
   window.addEventListener('message', function (event) {
     if (event.origin != '{{ beike_url() }}') return;
 
-    // token 逻辑，如果官网那边传回来了 token，说明该用户在登录插件市场 这时候需要更新 token
+    // token 邏輯，如果官網那邊傳回來了 token，說明該使用者在登入外掛市場 這時候需要更新 token
     if (event.data.type == 'set_token' && event.data.data.token != developerToken) {
       $http.post('{{ admin_route('settings.store_token') }}', {developer_token: event.data.data.token}).then((res) => {
-        // 如果有 login_plugin 说明是登录插件市场，需要刷新页面
+        // 如果有 login_plugin 說明是登入外掛市場，需要重新整理頁面
         if (event.data.data.login_plugin) {
           layer.load(2, {shade: [0.3,'#fff'] })
           window.location.reload();
@@ -62,7 +62,7 @@
       })
     }
 
-    // 下载插件 逻辑
+    // 下載外掛 邏輯
     if (event.data.type == 'download_plugin') {
       $http.post(`marketing/${event.data.data.code}/download`, null, {hmsg:true}).then((res) => {
         marketingIframe.contentWindow.postMessage({ type: 'download_plugin_done', data: {message: res.message} }, '{{ beike_url() }}');
@@ -77,7 +77,7 @@
       })
     }
 
-    // 去我的插件列表
+    // 去我的外掛列表
     if (event.data.type == 'to_plugins_index') {
       location.href = '{{ admin_route('plugins.index') }}';
     }

@@ -16,7 +16,7 @@ return [
     'category_image'     => '分類圖片',
 
     'categories_index'   => '分類列表',
-    'categories_create'  => '創建分類',
+    'categories_create'  => '建立分類',
     'categories_show'    => '分類詳情',
     'categories_update'  => '更新分類',
     'categories_delete'  => '刪除分類',

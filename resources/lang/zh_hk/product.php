@@ -27,5 +27,5 @@ return [
     'price'             => '價格',
     'quantity'          => '庫存',
     'sku'               => 'SKU',
-    'video'             => '視頻',
+    'video'             => '影片',
 ];

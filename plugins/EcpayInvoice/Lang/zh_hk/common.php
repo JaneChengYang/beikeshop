@@ -4,9 +4,9 @@ return [
     // 選單
     'menu_title' => '發票管理',
 
-    // 發票類型
+    // 發票型別
     'invoice_title'    => '發票資訊',
-    'carrier_type'     => '發票類型',
+    'carrier_type'     => '發票型別',
     'carrier_personal' => '個人電子發票',
     'carrier_mobile'   => '手機條碼載具',
     'carrier_love'     => '捐贈發票',
@@ -46,7 +46,7 @@ return [
     'no_results'                 => '無符合結果',
     'invoice_disabled'           => '發票功能目前未開啟',
 
-    // 後台操作
+    // 後臺操作
     'btn_issue'          => '補開發票',
     'btn_void'           => '作廢',
     'btn_allowance'      => '折讓',

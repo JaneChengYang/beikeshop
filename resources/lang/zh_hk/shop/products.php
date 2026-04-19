@@ -10,7 +10,7 @@
  */
 
 return [
-    'search'           => '搜索',
+    'search'           => '搜尋',
     'add_to_favorites' => '加入收藏夾',
     'add_to_cart'      => '加入購物車',
     'buy_now'          => '立即購買',

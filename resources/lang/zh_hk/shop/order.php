@@ -12,7 +12,7 @@
 
 return [
     'invalid_order'      => '無效的訂單',
-    'confirm_order'      => '用戶確認收貨',
-    'cancel_order'       => '用戶取消訂單',
+    'confirm_order'      => '使用者確認收貨',
+    'cancel_order'       => '使用者取消訂單',
     'order_already_paid' => '訂單已支付',
 ];

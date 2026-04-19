@@ -53,7 +53,7 @@
 
                 <div class="mt-5 mb-3 d-flex justify-content-between">
                   <button type="button" @click="submitForm('form')" class="btn w-50 btn-dark">
-                    {{-- @{{ !isCode ? '发送验证码'  :  '提交'  }} --}}
+                    {{-- @{{ !isCode ? '傳送驗證碼'  :  '提交'  }} --}}
                     <template v-if="!isCode">{{ __('shop/forgotten.send_code') }}</template>
                     <template v-else>{{ __('common.submit') }}</template>
                   </button>
@@ -155,7 +155,3 @@
   </script>
 </body>
 </html>
-
-
-
-

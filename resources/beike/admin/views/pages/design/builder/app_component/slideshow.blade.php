@@ -89,7 +89,7 @@ Vue.component('module-editor-slideshow', {
 
 @push('footer')
   <script>
-    // 定义模块的配置项
+    // 定義模組的配置項
     app.source.modules.push({
       title: '{{__('admin/app_builder.module_slideshow')}}',
       code: 'slideshow',

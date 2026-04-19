@@ -364,7 +364,7 @@
       const status = $(this).val();
       const self = $(this);
       $http.put(`customers/${id}/update_status`, {status: status}).then((res) => {
-        layer.msg('修改状态成功');
+        layer.msg('修改狀態成功');
       })
     });
 

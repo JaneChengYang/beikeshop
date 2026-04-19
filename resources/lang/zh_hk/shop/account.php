@@ -11,7 +11,7 @@
 
 return [
     'index'               => '個人中心',
-    'revise_info'         => '修改信息',
+    'revise_info'         => '修改資訊',
     'collect'             => '收藏',
     'coupon'              => '優惠券',
     'my_order'            => '我的訂單',
@@ -26,7 +26,7 @@ return [
     'order_time'          => '下單時間',
     'state'               => '狀態',
     'amount'              => '金額',
-    'check_details'       => '查看詳情',
+    'check_details'       => '檢視詳情',
     'all'                 => '共',
     'items'               => '件商品',
     'verify_code_expired' => '您的驗證碼已過期（10分鐘），請重新獲取',

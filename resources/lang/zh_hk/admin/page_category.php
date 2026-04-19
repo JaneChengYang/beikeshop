@@ -11,12 +11,12 @@
 
 return [
     'index'                  => '文章分類',
-    'info_title'             => '信息標題',
+    'info_title'             => '資訊標題',
     'info_content'           => '內容',
 
-    'page_categories_index'  => '分类列表',
-    'page_categories_create' => '创建分類',
-    'page_categories_show'   => '分類详情',
-    'page_categories_update' => '分類编辑',
-    'page_categories_delete' => '删除分類',
+    'page_categories_index'  => '分類列表',
+    'page_categories_create' => '建立分類',
+    'page_categories_show'   => '分類詳情',
+    'page_categories_update' => '分類編輯',
+    'page_categories_delete' => '刪除分類',
 ];

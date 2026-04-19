@@ -11,5 +11,5 @@
 
 return [
     'class_not_found'  => '無法找到類 :translator_name',
-    'empty_translator' => '未開啓任何翻譯工具, 請打開插件 - 翻譯工具 - 選擇翻譯工具配置並開啓',
+    'empty_translator' => '未開啟任何翻譯工具, 請開啟外掛 - 翻譯工具 - 選擇翻譯工具配置並開啟',
 ];

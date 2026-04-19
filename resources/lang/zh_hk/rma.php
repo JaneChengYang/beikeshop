@@ -16,7 +16,7 @@ return [
     'quantity'         => '數量',
     'opened'           => '已拆包裝',
     'rma_reason_id'    => '退換貨原因',
-    'type'             => '售後服務類型',
+    'type'             => '售後服務型別',
 
     'status_pending'   => '待處理',
     'status_rejected'  => '已拒絕',

@@ -114,13 +114,13 @@
           },
         },
         spaceBetween: 30,
-        // 如果需要前进后退按钮
+        // 如果需要前進後退按鈕
         navigation: {
           nextEl: '.relations-swiper-next',
           prevEl: '.relations-swiper-prev',
         },
 
-        // 如果需要分页器
+        // 如果需要分頁器
         pagination: {
           el: '.relations-pagination',
           clickable: true,

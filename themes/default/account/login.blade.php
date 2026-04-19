@@ -167,9 +167,9 @@
               @if (!request('iframe'))
                 location = "{{ shop_route('account.index') }}"
               @else
-                var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                var index = parent.layer.getFrameIndex(window.name); //先得到當前iframe層的索引
                 setTimeout(() => {
-                  parent.layer.close(index); //再执行关闭
+                  parent.layer.close(index); //再執行關閉
                   parent.window.location.reload()
                 }, 400);
               @endif
@@ -191,12 +191,12 @@
 
     @hook('account.login.form.js.after')
 
-    // 监听第三方登录成功回调的页面 postMessage 消息，关闭当前窗口
+    // 監聽第三方登入成功回撥的頁面 postMessage 訊息，關閉當前視窗
     window.addEventListener('message', function (event) {
       if (event.data.type == 'social_callback' && event.data.data == 'close_window') {
         if (window.name) {
-          var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
-          parent.layer.close(index); //再执行关闭
+          var index = parent.layer.getFrameIndex(window.name); //先得到當前iframe層的索引
+          parent.layer.close(index); //再執行關閉
           parent.window.location.reload()
         }
       }

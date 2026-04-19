@@ -430,7 +430,7 @@
             window.location.reload();
           });
 
-          return false; // 阻止默认关闭行为
+          return false; // 阻止預設關閉行為
         }
       });
     });
@@ -522,4 +522,3 @@
   </script>
   @endcan
 @endpush
-

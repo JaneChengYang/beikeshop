@@ -10,7 +10,7 @@
     @endif
 
     <div class="invoice-types mb-3 {{ !$invoiceEnabled ? 'pe-none opacity-50' : '' }}">
-        {{-- 類型選擇 --}}
+        {{-- 型別選擇 --}}
         <div class="d-flex gap-3 flex-wrap mb-3">
             @foreach ([
                 'personal' => __('EcpayInvoice::common.carrier_personal'),
@@ -139,7 +139,7 @@
         _loveSearchTimer = setTimeout(() => searchLoveCodes($(this).val().trim()), 300);
     });
 
-    // 點擊輸入框時若清單未顯示則自動載入
+    // 點選輸入框時若清單未顯示則自動載入
     $('#invoice_love_code').on('focus', function () {
         if ($('#love-code-results').is(':hidden') || $('#love-code-results').children().length === 0) {
             searchLoveCodes($(this).val().trim());

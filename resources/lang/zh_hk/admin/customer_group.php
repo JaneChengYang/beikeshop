@@ -17,9 +17,9 @@ return [
     'integral_factor'        => '使用積分係數',
 
     'customer_groups_index'  => '客戶組列表',
-    'customer_groups_create' => '創建客戶組',
+    'customer_groups_create' => '建立客戶組',
     'customer_groups_show'   => '客戶組詳情',
     'customer_groups_update' => '更新客戶組',
     'customer_groups_delete' => '刪除客戶組',
-    'default_cannot_delete'  => '默認客戶組不能刪除',
+    'default_cannot_delete'  => '預設客戶組不能刪除',
 ];

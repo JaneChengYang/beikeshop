@@ -132,7 +132,7 @@ Vue.component('module-editor-page', {
         background_color: ''
       },
       floor: languagesFill(''),
-      module_size: 'container-fluid',// 窄屏、宽屏、全屏
+      module_size: 'container-fluid',// 窄屏、寬屏、全屏
       items: [],
       title: languagesFill('{{ __('admin/builder.text_module_title') }}'),
     };

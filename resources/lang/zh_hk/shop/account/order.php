@@ -17,5 +17,5 @@ return [
     'amount'        => '金額',
     'state'         => '狀態',
     'order_number'  => '訂單號',
-    'check'         => '查看',
+    'check'         => '檢視',
 ];

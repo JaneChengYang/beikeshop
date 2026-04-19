@@ -2,7 +2,7 @@
 
 return [
     'code'                        => '優惠碼',
-    'type'                        => '折扣類型',
+    'type'                        => '折扣型別',
     'type_fixed'                  => '固定金額',
     'type_percent'                => '百分比',
     'value'                       => '折扣值',

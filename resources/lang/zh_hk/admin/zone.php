@@ -13,7 +13,7 @@ return [
     'country_of_origin' => '所屬國家',
 
     'zones_index'       => '省份列表',
-    'zones_create'      => '創建省份',
+    'zones_create'      => '建立省份',
     'zones_update'      => '更新省份',
     'zones_delete'      => '刪除省份',
 

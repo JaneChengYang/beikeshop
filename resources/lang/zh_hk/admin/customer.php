@@ -11,14 +11,14 @@
 
 return [
     'customers_index'        => '客戶列表',
-    'customers_create'       => '創建客戶',
+    'customers_create'       => '建立客戶',
     'customers_show'         => '客戶詳情',
     'customers_update'       => '更新客戶',
     'customers_delete'       => '刪除客戶',
 
-    'user_info'              => '用戶信息',
+    'user_info'              => '使用者資訊',
     'address_management'     => '地址管理',
-    'user_name'              => '用戶名',
+    'user_name'              => '使用者名稱',
     'password_info'          => '留空則保持原密碼不變',
     'add_address'            => '新增地址',
     'no_address'             => '當前賬號無地址',

@@ -140,7 +140,7 @@
           sidebar: true,
           editingModuleIndex: null,
           ready: false,
-          moduleLoadCount: 0, // 第一次选择已配置模块时，不需要请求数据，
+          moduleLoadCount: 0, // 第一次選擇已配置模組時，不需要請求資料，
         },
 
         source: {
@@ -148,14 +148,14 @@
           config: []
         },
       },
-      // 计算属性
+      // 計算屬性
       computed: {
-        // 编辑中的模块编辑组件
+        // 編輯中的模組編輯元件
         editingModuleComponent() {
           return 'module-editor-' + this.editingModuleCode.replaceAll('_', '-');
         },
 
-        // 编辑中的模块 code
+        // 編輯中的模組 code
         editingModuleCode() {
           return this.form.modules[this.design.editingModuleIndex].code;
         },
@@ -211,7 +211,7 @@
           })
         },
 
-        // 编辑模块
+        // 編輯模組
         editModuleButtonClicked(index) {
           if (this.design.editingModuleIndex == index) {
             return;
@@ -236,7 +236,7 @@
         },
 
         isIcon(code) {
-          // 判断 code 是否以 &# 开头
+          // 判斷 code 是否以 &# 開頭
           return code.indexOf('&#') == 0;
         },
 
@@ -250,7 +250,7 @@
             previewWindow = document.getElementById("preview-iframe").contentWindow;
             app.design.ready = true;
 
-            // 编辑模块
+            // 編輯模組
             $(previewWindow.document).on('click', '.module-edit .edit', function(event) {
               const module_id = $(this).parents('.module-item').prop('id').replace('module-', '');
               const modules = app.form.modules;
@@ -258,7 +258,7 @@
               app.editModuleButtonClicked(editingModuleIndex);
             });
 
-            // 删除模块
+            // 刪除模組
             $(previewWindow.document).on('click', '.module-edit .delete', function(event) {
               const module_id = $(this).parents('.module-item').prop('id').replace('module-', '');
               const editingModuleIndex = app.form.modules.findIndex(e => e.module_id == module_id);
@@ -269,7 +269,7 @@
               app.form.modules.splice(editingModuleIndex, 1);
             });
 
-            // 模块位置改变，点击.module-edit .up或者.down
+            // 模組位置改變，點選.module-edit .up或者.down
             $(previewWindow.document).on('click', '.module-edit .up, .module-edit .down', function(event) {
               const module_id = $(this).parents('.module-item').prop('id').replace('module-', '');
               const modules = app.form.modules;
@@ -301,17 +301,17 @@
               group: {
                 name: 'shared',
                 pull: 'clone',
-                put: false // 不允许拖拽进这个列表
+                put: false // 不允許拖拽進這個列表
               },
               // ghostClass: 'iframe-modules-sortable-ghost',
               animation: 150,
-              sort: false, // 设为false，禁止sort
+              sort: false, // 設為false，禁止sort
               onEnd: function (evt) {
                 if (evt.to.id != 'home-modules-box') {
                   return;
                 }
 
-                // 获取 当前位置 在modules-box 是第几个
+                // 獲取 當前位置 在modules-box 是第幾個
                 const index = $(previewWindow.document).find('.modules-box').children().index(evt.item);
                 const moduleCode = $(evt.item).find('.module-list').data('code');
 

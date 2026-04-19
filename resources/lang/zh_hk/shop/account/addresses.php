@@ -11,12 +11,12 @@
 
 return [
     'index'           => '我的地址',
-    'add_address'     => '添加新地址',
-    'default_address' => '默認地址',
+    'add_address'     => '新增新地址',
+    'default_address' => '預設地址',
     'delete'          => '刪除',
     'edit'            => '編輯',
     'enter_name'      => '請輸入姓名',
-    'enter_phone'     => '請輸入聯繫電話',
+    'enter_phone'     => '請輸入聯絡電話',
     'enter_address'   => '請輸入詳細地址 1',
     'select_province' => '請選擇縣市',
     'enter_city'      => '請填寫城市',

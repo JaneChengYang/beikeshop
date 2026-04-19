@@ -23,7 +23,7 @@
               </el-form-item>
               @hookwrapper('admin.customer.form.from.customer_group')
               <el-form-item label="{{ __('admin/customer_group.index') }}">
-                <el-select v-model="form.customer_group_id" placeholder="请选择">
+                <el-select v-model="form.customer_group_id" placeholder="請選擇">
                   <el-option v-for="item in source.customer_group" :key="item.id" :label="item.name"
                     :value="item.id">
                   </el-option>
@@ -34,7 +34,7 @@
                 <el-switch v-model="form.active" :active-value="1" :inactive-value="0"></el-switch>
               </el-form-item>
               <el-form-item label="{{ __('common.examine') }}" prop="examine">
-                <el-select v-model="form.status" placeholder="请选择">
+                <el-select v-model="form.status" placeholder="請選擇">
                   <el-option v-for="item in source.statuses" :key="item.code" :label="item.label"
                     :value="item.code">
                   </el-option>
@@ -240,7 +240,7 @@
         @hook('admin.customer.form.vue.data')
       },
 
-      // 在挂载开始之前被调用:相关的 render 函数首次被调用
+      // 在掛載開始之前被呼叫:相關的 render 函式首次被呼叫
       beforeMount() {
         this.countryChange(this.dialogAddress.form.country_id);
 

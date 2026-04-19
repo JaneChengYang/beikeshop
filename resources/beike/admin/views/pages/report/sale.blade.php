@@ -24,7 +24,7 @@
       <div class="bg-light p-2 mb-3" id="app">
         <el-form :inline="true" ref="filterForm" :model="filter" class="demo-form-inline" label-width="100px">
           <el-form-item label="{{ __('common.status') }}" class="mb-0">
-            <el-select v-model="filter.statuses" multiple placeholder="请选择" size="small" class="wp-400" @change="changeSearch" @visible-change="search">
+            <el-select v-model="filter.statuses" multiple placeholder="請選擇" size="small" class="wp-400" @change="changeSearch" @visible-change="search">
               <el-option v-for="item in statuses" :key="item.status" :label="item.name" :value="item.status"></el-option>
             </el-select>
           </el-form-item>
@@ -238,7 +238,7 @@
   }
 
   $('.orders-right .btn-group > .btn').on('click', function() {
-    const day = $(this).data('type'); // 天数
+    const day = $(this).data('type'); // 天數
     const labels = eval(day).period;
     const data = [eval(day).totals, eval(day).amounts];
     $(this).addClass('btn-info text-white').siblings().removeClass('btn-info text-white');
@@ -307,6 +307,3 @@
   });
 </script>
 @endpush
-
-
-

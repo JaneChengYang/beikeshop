@@ -10,5 +10,5 @@
  */
 
 return [
-    'verify_code_sent' => '驗證碼已發送，請查看並輸入驗證碼',
+    'verify_code_sent' => '驗證碼已傳送，請檢視並輸入驗證碼',
 ];

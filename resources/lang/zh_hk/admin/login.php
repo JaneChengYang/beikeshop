@@ -10,6 +10,6 @@
  */
 
 return [
-    'plugins_index' => '登錄到 BeikeShop 後台',
-    'log_in'        => '登錄',
+    'plugins_index' => '登入到 BeikeShop 後臺',
+    'log_in'        => '登入',
 ];

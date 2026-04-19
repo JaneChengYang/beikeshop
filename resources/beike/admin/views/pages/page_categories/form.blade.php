@@ -60,7 +60,7 @@
                   />
                   <x-admin::form.row title="{{ __('page_category.text_summary') }}">
                     <div class="input-group w-max-400">
-                      <textarea rows="4" type="text" name="descriptions[{{ $language['code'] }}][summary]" class="form-control wp-400" placeholder="分类概述">{{ old('descriptions.' . $language['code'] . '.summary', $descriptions[$language['code']]['summary'] ?? '') }}</textarea>
+                      <textarea rows="4" type="text" name="descriptions[{{ $language['code'] }}][summary]" class="form-control wp-400" placeholder="分類概述">{{ old('descriptions.' . $language['code'] . '.summary', $descriptions[$language['code']]['summary'] ?? '') }}</textarea>
                     </div>
                   </x-admin::form.row>
 

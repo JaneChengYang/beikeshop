@@ -20,7 +20,7 @@ return [
     'verification_code'      => '驗證碼',
     'password'               => '密碼',
     'confirm_password'       => '確認密碼',
-    'send_code'              => '發送驗證碼',
+    'send_code'              => '傳送驗證碼',
     'to_back'                => '返回上一步',
     'enter_password'         => '請輸入密碼',
     'enter_email'            => '請輸入郵箱',
@@ -28,6 +28,6 @@ return [
     'password_err'           => '兩次輸入密碼不一致!',
     'email_err'              => '請輸入正確郵箱地址!',
     'enter_code'             => '請輸入驗證碼',
-    'verification_code_sent' => '驗證碼已發送，請查看並輸入驗證碼',
+    'verification_code_sent' => '驗證碼已傳送，請檢視並輸入驗證碼',
     'password_updated'       => '密碼已修改',
 ];

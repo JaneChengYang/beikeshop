@@ -23,7 +23,7 @@
             <div class="col-6 col-md-4 col-lg-3">
               <div class="product-wrap">
                 <div class="image"><a href="javascript:void(0)"><img src="{{ asset('catalog/placeholder.png') }}" class="img-fluid"></a></div>
-                <div class="product-name">请配置商品</div>
+                <div class="product-name">請配置商品</div>
                 <div class="product-price">
                   <span class="price-new">66.66</span>
                   <span class="price-lod">99.99</span>

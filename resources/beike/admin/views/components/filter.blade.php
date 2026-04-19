@@ -1,7 +1,7 @@
 <div id="filter-app">
   <form class="form-inline">
     <input type="text" v-model="keyword" class="form-control mr-2">
-    <button type="button" @click="search" class="btn btn-primary">筛选</button>
+    <button type="button" @click="search" class="btn btn-primary">篩選</button>
   </form>
   
 </div>

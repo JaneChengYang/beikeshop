@@ -37,7 +37,7 @@
                   <div class="text mb-3 text-muted">{{ __('shop/account.no_order') }}<a href="">{{ __('shop/account.to_buy') }}</a></div>
                 </div>
               @else
-                {{-- <p class="text-muted">近期订单</p> --}}
+                {{-- <p class="text-muted">近期訂單</p> --}}
                 <ul class="list-unstyled orders-list table-responsive">
                   <table class="table table-hover">
                     <tbody>

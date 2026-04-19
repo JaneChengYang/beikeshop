@@ -134,7 +134,7 @@
       },
       rules: {
         code:  [{ required: true, message: '請輸入優惠碼', trigger: 'blur' }],
-        type:  [{ required: true, message: '請選擇折扣類型', trigger: 'change' }],
+        type:  [{ required: true, message: '請選擇折扣型別', trigger: 'change' }],
         value: [{ required: true, message: '請輸入折扣值', trigger: 'blur' }],
       },
     },

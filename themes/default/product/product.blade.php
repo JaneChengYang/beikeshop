@@ -309,7 +309,7 @@
       el: '#product-app',
 
       data: {
-        selectedVariantsIndex: [], // 选中的变量索引
+        selectedVariantsIndex: [], // 選中的變數索引
         images: [],
         product: {
           id: 0,
@@ -339,7 +339,7 @@
         const skuDefault = skus.find(e => e.is_default)
         this.selectedVariantsIndex = skuDefault.variants
 
-        // 为 variables 里面每一个 values 的值添加 selected、disabled 字段
+        // 為 variables 裡面每一個 values 的值新增 selected、disabled 欄位
         if (this.source.variables.length) {
           this.source.variables.forEach(variable => {
             variable.values.forEach(value => {
@@ -352,7 +352,7 @@
           this.getSelectedSku(false);
           this.updateSelectedVariantsStatus()
         } else {
-          // 如果没有默认的sku，则取第一个sku的第一个变量的第一个值
+          // 如果沒有預設的sku，則取第一個sku的第一個變數的第一個值
           this.product = skus[0];
           this.product.weight = this.source.weight;
           this.images = @json($product['images'] ?? []);
@@ -374,7 +374,7 @@
           setTimeout(() => { swiper.update()}, 0);
         },
 
-        // 把对应 selectedVariantsIndex 下标选中 variables -> values 的 selected 字段为 true
+        // 把對應 selectedVariantsIndex 下標選中 variables -> values 的 selected 欄位為 true
         checkedVariants() {
           this.source.variables.forEach((variable, index) => {
             variable.values[this.selectedVariantsIndex[index]].selected = true
@@ -382,7 +382,7 @@
         },
 
         getSelectedSku(reload = true) {
-          // 通过 selectedVariantsIndex 的值比对 skus 的 variables
+          // 透過 selectedVariantsIndex 的值比對 skus 的 variables
           const sku = this.source.skus.find(sku => sku.variants.toString() == this.selectedVariantsIndex.toString())
           this.images =
           @json($product['images'] ?? [])
@@ -411,10 +411,10 @@
             sku_id: this.product.id,
             quantity: this.quantity,
             isBuyNow,
-            ...this.extraCartParams // 插件扩展参数
+            ...this.extraCartParams // 外掛擴充套件引數
           };
 
-          // 插件扩展方法
+          // 外掛擴充套件方法
           if (typeof this.beforeAddCartHooks === 'function') {
             const beforeAddCartHooks = this.beforeAddCartHooks(params);
             if (beforeAddCartHooks === false) {
@@ -430,7 +430,7 @@
             }
 
             if (isIframe) {
-              let index = parent.layer.getFrameIndex(window.name); //当前iframe层的索引
+              let index = parent.layer.getFrameIndex(window.name); //當前iframe層的索引
               parent.bk.getCarts();
               setTimeout(() => {
                 parent.layer.close(index);
@@ -449,7 +449,7 @@
         },
 
         updateSelectedVariantsIndex() {
-          // 获取选中的 variables 内 value的 下标 index 填充到 selectedVariantsIndex 中
+          // 獲取選中的 variables 內 value的 下標 index 填充到 selectedVariantsIndex 中
           this.source.variables.forEach((variable, index) => {
             variable.values.forEach((value, value_index) => {
               if (value.selected) {
@@ -460,7 +460,7 @@
         },
 
         updateSelectedVariantsStatus() {
-          // skus 里面 quantity 不为 0 的 sku.variants
+          // skus 裡面 quantity 不為 0 的 sku.variants
           const skus = this.source.skus.filter(sku => sku.quantity > 0).map(sku => sku.variants);
           this.source.variables.forEach((variable, index) => {
             variable.values.forEach((value, value_index) => {
@@ -533,13 +533,13 @@
         },
       },
       spaceBetween: 30,
-      // 如果需要前进后退按钮
+      // 如果需要前進後退按鈕
       navigation: {
         nextEl: '.relations-swiper-next',
         prevEl: '.relations-swiper-prev',
       },
 
-      // 如果需要分页器
+      // 如果需要分頁器
       pagination: {
         el: '.relations-pagination',
         clickable: true,

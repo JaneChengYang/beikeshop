@@ -11,14 +11,14 @@
  */
 
 return [
-    'module_brand'           => '品牌模塊',
-    'module_banner'          => '橫幅模塊',
+    'module_brand'           => '品牌模組',
+    'module_banner'          => '橫幅模組',
     'module_four_image_pro'  => '一行四圖 PRO',
-    'module_slideshow'       => '幻燈片模塊',
+    'module_slideshow'       => '幻燈片模組',
     'module_tab_products'    => '選項卡商品',
-    'module_icons'           => '圖標模塊',
-    'module_product'         => '商品模塊',
-    'module_rich_text'       => '富文本模塊',
+    'module_icons'           => '圖示模組',
+    'module_product'         => '商品模組',
+    'module_rich_text'       => '富文本模組',
     'module_page'            => '文章模組',
     'design_index'           => '首頁裝修',
     'design_footer_index'    => '尾頁裝修',

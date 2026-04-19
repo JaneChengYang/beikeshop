@@ -11,6 +11,6 @@
 
 return [
     'name'         => '品牌名稱',
-    'icon'         => '圖標',
+    'icon'         => '圖示',
     'first_letter' => '首字母',
 ];

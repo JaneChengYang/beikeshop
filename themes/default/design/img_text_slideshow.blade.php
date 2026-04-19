@@ -102,15 +102,15 @@
         var scrollTextWidth = $scrollText.width();
         var scrollInfoWidth = $module.width();
 
-        // 滚动速度（像素/秒）
-        var speed = 100; // 可调整滚动速度
-        var duration = scrollTextWidth / speed; // 动画持续时间，单位：秒
+        // 滾動速度（畫素/秒）
+        var speed = 100; // 可調整滾動速度
+        var duration = scrollTextWidth / speed; // 動畫持續時間，單位：秒
 
-        // 计算需要重复的次数，确保内容填满容器
+        // 計算需要重複的次數，確保內容填滿容器
         var scrollCount = Math.ceil(scrollInfoWidth / scrollTextWidth) + 1;
         var scrollTextHtml = '';
 
-        // 拼接滚动内容
+        // 拼接滾動內容
         for (var i = 0; i < scrollCount; i++) {
           scrollTextHtml +=
             '<span class="scroll-text" style="animation-duration: ' + duration + 's;">' +
@@ -118,12 +118,9 @@
             '</span>';
         }
 
-        // 更新滚动区域内容
+        // 更新滾動區域內容
         $module.find('.scroll-info').html(scrollTextHtml);
       }
     })
   </script>
 </section>
-
-
-

@@ -8,7 +8,7 @@
 
     <div class="module-editor-row">{{ __('admin/builder.modules_content') }}</div>
     <div class="module-edit-group">
-      <div class="module-edit-title">搜索分类</div>
+      <div class="module-edit-title">搜尋分類</div>
       <div class="tab-info">
         <div class="module-edit-group">
           <div class="autocomplete-group-wrapper">
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="module-edit-group">
-      <div class="module-edit-title">数量</div>
+      <div class="module-edit-title">數量</div>
       <el-input v-model="form.limit" type="muner" size="small" @input="limitChange"></el-input>
     </div>
   </div>

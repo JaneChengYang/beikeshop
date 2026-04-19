@@ -9,9 +9,9 @@
  * @modified   2022-07-28 20:59:38
  */
 return [
-    'index'        => '新聞博客',
+    'index'        => '新聞部落格',
     'author'       => '作者',
-    'views'        => '查看數',
-    'created_at'   => '發佈時間',
+    'views'        => '檢視數',
+    'created_at'   => '釋出時間',
     'text_summary' => '分類概述',
 ];

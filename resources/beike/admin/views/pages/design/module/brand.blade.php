@@ -121,7 +121,7 @@ Vue.component('module-editor-brand', {
         background_color: ''
       },
       floor: languagesFill(''),
-      module_size: 'container-fluid',// 窄屏、宽屏、全屏
+      module_size: 'container-fluid',// 窄屏、寬屏、全屏
       title: languagesFill('{{ __('admin/builder.text_module_title') }}'),
       brands: []
     }

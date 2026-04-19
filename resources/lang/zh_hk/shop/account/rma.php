@@ -13,8 +13,8 @@ return [
     'index'         => '我的售後',
     'commodity'     => '商品',
     'quantity'      => '數量',
-    'service_type'  => '服務類型',
+    'service_type'  => '服務型別',
     'return_reason' => '退換原因',
-    'creation_time' => '創建時間',
-    'check'         => '查看',
+    'creation_time' => '建立時間',
+    'check'         => '檢視',
 ];

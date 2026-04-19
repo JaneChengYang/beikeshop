@@ -247,7 +247,7 @@
 
             <div v-if="mail_engine == 'sendmail'">
               <x-admin-form-input name="sendmail[path]" :placeholder="222" required title="{{ __('admin/setting.sendmail_path') }}" value="{{ old('path', system_setting('base.sendmail.path', '')) }}">
-                <div class="help-text font-size-12 lh-base">系统 sendmail 执行路径, 一般为 /usr/sbin/sendmail -bs</div>
+                <div class="help-text font-size-12 lh-base">系統 sendmail 執行路徑, 一般為 /usr/sbin/sendmail -bs</div>
               </x-admin-form-input>
             </div>
 
@@ -383,7 +383,7 @@
     const country_id = {{ system_setting('base.country_id', '1') }};
     const zone_id = {{ system_setting('base.zone_id', '1') ?: 1 }};
 
-    // 获取省份
+    // 獲取省份
     const getZones = (country_id) => {
       $http.get(`countries/${country_id}/zones`, null, {hload: true}).then((res) => {
         if (res.data.zones.length > 0) {
@@ -496,7 +496,7 @@
         initialAspectRatio: ratio.split('/')[0] / ratio.split('/')[1],
         autoCropArea: 1,
         viewMode: 1,
-        // 回调 获取尺寸
+        // 回撥 獲取尺寸
         crop: function(event) {
           $('.cropper-size span').html(parseInt(event.detail.width) + ' * ' + parseInt(event.detail.height))
         }
@@ -514,7 +514,7 @@
       if (cropper) {
         canvas = cropper.getCroppedCanvas({
           imageSmoothingQuality: 'high',
-          width: 800, //最大宽度
+          width: 800, //最大寬度
           height: 800, //最大高度
         });
         canvas.toBlob(function(blob) {
@@ -560,6 +560,3 @@
     });
   </script>
 @endpush
-
-
-

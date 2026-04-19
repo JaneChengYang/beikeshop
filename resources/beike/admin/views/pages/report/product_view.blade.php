@@ -157,7 +157,7 @@
   }
 
   $('.orders-right .btn-group > .btn').on('click', function() {
-    const day = $(this).data('type'); // 天数
+    const day = $(this).data('type'); // 天數
     const labels = Object.keys(eval(day).pv_totals);
     const data = [Object.values(eval(day).pv_totals), Object.values(eval(day).uv_totals)];
     $(this).addClass('btn-info text-white').siblings().removeClass('btn-info text-white');
@@ -181,17 +181,17 @@
 
   function getProducrReports(id, callback) {
     $http.get(`reports/product_view/${id}`).then(function(res) {
-      // 页面滚动到顶部
+      // 頁面滾動到頂部
       $('#content').animate({scrollTop: 0}, 200);
       viewsTrends = res.data.views_trends;
       ordersChart.data.labels = Object.keys(viewsTrends.latest_month.pv_totals);
       ordersChart.data.datasets[0].data = viewsTrends.latest_month.pv_totals;
       ordersChart.data.datasets[1].data = viewsTrends.latest_month.uv_totals;
-      // 同时更新  latest_month, latest_week, latest_year
+      // 同時更新  latest_month, latest_week, latest_year
       latest_month = viewsTrends.latest_month;
       latest_week = viewsTrends.latest_week;
       latest_year = viewsTrends.latest_year;
-      // 更新按钮状态
+      // 更新按鈕狀態
       $('.orders-right .btn-group > .btn').removeClass('btn-info text-white');
       $('.orders-right .btn-group > .btn[data-type="latest_month"]').addClass('btn-info text-white');
 
@@ -222,6 +222,3 @@
   })
 </script>
 @endpush
-
-
-

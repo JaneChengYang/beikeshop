@@ -11,9 +11,9 @@
 
 return [
     'product_total' => '新製品',
-    'customer_view' => '用戶訪問量',
+    'customer_view' => '使用者訪問量',
     'order_total'   => '訂單量',
-    'customer_new'  => '新增用戶',
+    'customer_new'  => '新增使用者',
     'order_amount'  => '銷售額',
     'today'         => '今日',
     'yesterday'     => '昨日',
@@ -21,6 +21,6 @@ return [
 
     'order_report'  => '訂單統計',
     'latest_month'  => '一個月',
-    'latest_week'   => '一周',
+    'latest_week'   => '一週',
     'latest_year'   => '一年',
 ];

@@ -17,5 +17,5 @@ return [
     'reports_view_chart' => '商品展現量（PV）:',
     'uv_total'           => '商品訪客數',
     'view_count'         => '瀏覽次數',
-    'view_product_chart' => '查看趨勢',
+    'view_product_chart' => '檢視趨勢',
 ];

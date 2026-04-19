@@ -47,7 +47,7 @@
           </el-form-item>
 
           <el-form-item label="{{ __('admin/app_push.link') }}" prop="value" class="link-wrap">
-            {{-- <el-input class="mb-0" v-model="form.value" placeholder="参数"></el-input> --}}
+            {{-- <el-input class="mb-0" v-model="form.value" placeholder="引數"></el-input> --}}
             <link-selector v-model="form.link" :is-title="false" :hide-types="['static', 'brand', 'page_category']">
             </link-selector>
             <div class="help-text font-size-12 lh-base">{{ __('admin/app_push.link_tip') }}</div>

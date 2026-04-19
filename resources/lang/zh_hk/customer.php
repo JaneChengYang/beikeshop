@@ -10,11 +10,11 @@
  */
 
 return [
-    'approved'       => '已審覈',
-    'customer_group' => '用戶組',
+    'approved'       => '已稽核',
+    'customer_group' => '使用者組',
     'email'          => 'Email',
     'from'           => '註冊來源',
     'name'           => '姓名',
-    'pending'        => '待審覈',
+    'pending'        => '待稽核',
     'rejected'       => '已拒絕',
 ];

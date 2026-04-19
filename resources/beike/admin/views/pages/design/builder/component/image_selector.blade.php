@@ -71,11 +71,11 @@
         canRemove: {
           default: false
         },
-        isLanguage: { // 是否需要多语言配置
+        isLanguage: { // 是否需要多語言配置
           default: true
         },
 
-        isAlt: { // 是否需要alt属性
+        isAlt: { // 是否需要alt屬性
           default: false
         },
       },

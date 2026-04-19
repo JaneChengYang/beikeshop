@@ -10,10 +10,10 @@
  */
 
 return [
-    'index'           => '提交售後信息',
-    'service_type'    => '服務類型',
+    'index'           => '提交售後資訊',
+    'service_type'    => '服務型別',
     'return_quantity' => '退換數量',
-    'unpacked'        => '已打開包裝',
+    'unpacked'        => '已開啟包裝',
     'return_reason'   => '退換原因',
     'remark'          => '備註',
 ];

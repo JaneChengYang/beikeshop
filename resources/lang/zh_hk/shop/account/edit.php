@@ -10,7 +10,7 @@
  */
 
 return [
-    'index'                 => '修改個人信息',
+    'index'                 => '修改個人資訊',
     'modify_avatar'         => '修改頭像',
     'suggest'               => '上傳JPG或PNG圖片。建議300 x 300。 ',
     'name'                  => '名稱',
