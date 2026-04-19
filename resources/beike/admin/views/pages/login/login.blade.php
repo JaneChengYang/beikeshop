@@ -51,7 +51,7 @@
       </div>
 
       <p class="text-center text-secondary mt-5">
-        <a href="https://beikeshop.com/" class="ms-2" target="_blank">US3C</a>
+        <span class="ms-2">US3C</span>
         v{{ config('beike.version') }}({{ config('beike.build') }})
         &copy; {{ date('Y') }} All Rights Reserved</p>
     </div>

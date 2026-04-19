@@ -178,7 +178,6 @@
     </div>
   </div>
 
-  <img src="https://beikeshop.com/install/plugin.jpg?version={{ config('beike.version') }}&build_date={{ config('beike.build') }}&plugin={{ $plugin->code }}" class="d-none">
 @endsection
 
 @push('footer')

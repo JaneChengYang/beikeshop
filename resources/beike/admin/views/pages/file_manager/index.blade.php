@@ -184,7 +184,7 @@
         <div class="alert alert-info mb-2">
           {{ __('admin/file_manager.upload_hint_1') }} <@{{ folderCurrentName }}>,
           {{ __('admin/file_manager.upload_hint_2', ['max_size' => ini_get('upload_max_filesize')]) }}
-          <a class="fw-bold" href="https://docs.beikeshop.com/config/upload_max_filesize.html" target="_blank">{{ __('admin/file_manager.modify_size_limit') }}</a>
+          <span class="fw-bold">{{ __('admin/file_manager.modify_size_limit') }}</span>
         </div>
         <el-upload class="photos-upload" target="photos-upload" id="photos-upload"
           element-loading-text="{{ __('admin/file_manager.image_uploading') }}..."

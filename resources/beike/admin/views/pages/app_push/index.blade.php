@@ -9,7 +9,6 @@
 @endpush
 
 @section('page-title-after')
-<a class="btn btn-outline-primary btn-sm" href="{{ beike_url() }}/solution/app" target="_blank">{{ __('admin/app_builder.to_buy') }}</a>
 @endsection
 
 <div class="card" id="app" v-cloak>

@@ -24,5 +24,5 @@ return [
     'order_status_auto_push'    => '订单发货状态更新自动推送',
     'order_status_update_title' => '订单状态更新',
     'order_status_update_info'  => '订单状态已更新为: ',
-    'push_tip_1'                => '推送服务 API URL 申请教程：<a href="https://docs.beikeshop.com/config/app_push.html" target="_blank">https://docs.beikeshop.com/config/app_push.html</a>',
+    'push_tip_1'                => '推送服务 API URL 申请教程：https://docs.beikeshop.com/config/app_push.html',
 ];

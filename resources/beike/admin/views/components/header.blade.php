@@ -77,11 +77,9 @@
 
         @hookwrapper('admin.header.license')
         <li class="nav-item">
-          <a
-            href="{{ beike_url() }}/vip/subscription?domain={{ config('app.url') }}&developer_token={{ system_setting('base.developer_token') }}&type=tab-license"
-            target="_blank" class="nav-link">
+          <span class="nav-link">
             <i class="bi bi-wrench-adjustable-circle fs-5 text-info"></i>&nbsp;@lang('admin/common.license_services')
-          </a>
+          </span>
         </li>
         @endhookwrapper
 
@@ -174,8 +172,7 @@
 
   <div class="d-flex justify-content-center mb-3">
     <button class="btn btn-outline-secondary me-3 ">{{ __('common.cancel') }}</button>
-    <a href="https://beikeshop.com/download" target="_blank"
-       class="btn btn-primary">{{ __('admin/common.update_btn') }}</a>
+    <span class="btn btn-primary disabled">{{ __('admin/common.update_btn') }}</span>
   </div>
 </div>
 @push('footer')

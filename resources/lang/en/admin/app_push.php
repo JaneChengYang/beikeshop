@@ -24,5 +24,5 @@ return [
     'order_status_update_title' => 'Order status update',
     'order_status_auto_push'    => 'Automatic push of order delivery status updates',
     'order_status_update_info'  => 'Order status has been updated to: ',
-    'push_tip_1'                => 'Push service API URL application tutorial: <a href="https://docs.beikeshop.com/config/app_push.html" target="_blank">https://docs.beikeshop.com/config/app_push.html</a>',
+    'push_tip_1'                => 'Push service API URL application tutorial: https://docs.beikeshop.com/config/app_push.html',
 ];
