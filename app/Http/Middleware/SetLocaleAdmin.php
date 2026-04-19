@@ -17,7 +17,7 @@ class SetLocaleAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        $currentLocale = current_user()->locale ?? 'zh_cn';
+        $currentLocale = current_user()->locale ?? system_setting('base.locale', 'zh_hk');
         if (in_array($currentLocale, admin_languages())) {
             App::setLocale($currentLocale);
         } else {
