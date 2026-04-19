@@ -75,13 +75,6 @@
         </li>
 
 
-        @hookwrapper('admin.header.license')
-        <li class="nav-item">
-          <span class="nav-link">
-            <i class="bi bi-wrench-adjustable-circle fs-5 text-info"></i>&nbsp;@lang('admin/common.license_services')
-          </span>
-        </li>
-        @endhookwrapper
 
         @hookwrapper('admin.header.marketing')
         <li class="nav-item">
