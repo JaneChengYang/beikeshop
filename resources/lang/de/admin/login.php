@@ -10,6 +10,6 @@
  */
 
 return [
-    'plugins_index' => 'Melden Sie sich beim BeikeShop-Backend an',
+    'plugins_index' => 'Melden Sie sich beim US3C-Backend an',
     'log_in'        => 'Einloggen',
 ];

@@ -33,7 +33,7 @@ return [
     'free_days'               => '선물',
     'free_days_over'          => '일 개월 판매 후',
     'get_token'               => 'Token을 클릭하여 획득합니다',
-    'get_token_text'          => 'BeikeShop 홈페이지 개인센터 로그인 - 도메인 이름 바인딩, 현재 도메인 이름 추가',
+    'get_token_text'          => 'US3C 홈페이지 개인센터 로그인 - 도메인 이름 바인딩, 현재 도메인 이름 추가',
     'last_update'             => '마지막 업데이트',
     'lv1_developer'           => 'lv1개발자',
     'lv2_developer'           => 'lv2개발자',

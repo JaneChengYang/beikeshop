@@ -101,7 +101,7 @@ return [
     'update_nav'                   => 'aktualisieren',
     'update_new_version'           => 'neueste Version',
     'update_old_version'           => 'aktuelle Version',
-    'update_title'                 => 'Neue Version von BeikeShop suchen, jetzt aktualisieren',
+    'update_title'                 => 'Neue Version von US3C suchen, jetzt aktualisieren',
     'zone'                         => 'Provinz',
     'zones_index'                  => 'Provinzverwaltung',
     'help_index'                   => 'Helfen',

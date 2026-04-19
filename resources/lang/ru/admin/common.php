@@ -101,7 +101,7 @@ return [
     'update_nav'                   => 'обновить',
     'update_new_version'           => 'последняя версия',
     'update_old_version'           => 'текущая версия',
-    'update_title'                 => 'Найти новую версию BeikeShop, обновить ли сейчас',
+    'update_title'                 => 'Найти новую версию US3C, обновить ли сейчас',
     'zone'                         => 'провинциями',
     'zones_index'                  => 'Управление провинции',
     'help_index'                   => 'помощь',

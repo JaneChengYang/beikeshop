@@ -101,7 +101,7 @@ return [
     'update_nav'                   => '업데이트',
     'update_new_version'           => '최신 버전',
     'update_old_version'           => '현재 버전',
-    'update_title'                 => '새로운 BeikeShop 버전을 발견, 즉시 업데이트하시겠습니까?',
+    'update_title'                 => '새로운 US3C 버전을 발견, 즉시 업데이트하시겠습니까?',
     'zone'                         => '성 관리',
     'zones_index'                  => '성 관리',
     'help_index'                   => '돕다',

@@ -10,6 +10,6 @@
  */
 
 return [
-    'plugins_index' => 'Iniciar sesión en el backend de BeikeShop',
+    'plugins_index' => 'Iniciar sesión en el backend de US3C',
     'log_in'        => 'Iniciar sesión',
 ];

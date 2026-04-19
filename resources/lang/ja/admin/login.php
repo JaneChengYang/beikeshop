@@ -10,6 +10,6 @@
  */
 
 return [
-    'plugins_index' => 'BeikeShop バックエンドへのログイン',
+    'plugins_index' => 'US3C バックエンドへのログイン',
     'log_in'        => 'ログイン',
 ];

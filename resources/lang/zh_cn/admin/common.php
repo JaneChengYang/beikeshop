@@ -102,7 +102,7 @@ return [
     'countries_index'        => '国家/地区',
     'zones_index'            => '省份管理',
     'update_nav'             => '更新',
-    'update_title'           => '发现新的BeikeShop版本，是否立即更新',
+    'update_title'           => '发现新的US3C版本，是否立即更新',
     'update_new_version'     => '最新版本',
     'update_old_version'     => '当前版本',
     'update_date'            => '更新日期',

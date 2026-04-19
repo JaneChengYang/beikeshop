@@ -10,6 +10,6 @@
  */
 
 return [
-    'plugins_index' => 'BeikeShop 백그라운드로 로그인하기',
+    'plugins_index' => 'US3C 백그라운드로 로그인하기',
     'log_in'        => '로그인',
 ];

@@ -103,7 +103,7 @@ return [
     'update_nav'             => '更新',
     'update_new_version'     => '最新版本',
     'update_old_version'     => '當前版本',
-    'update_title'           => '發現新的BeikeShop版本，是否立即更新',
+    'update_title'           => '發現新的US3C版本，是否立即更新',
     'zone'                   => '省份管理',
     'zones_index'            => '省份管理',
     'help_index'             => '幫助',
