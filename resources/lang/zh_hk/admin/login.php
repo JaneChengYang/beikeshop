@@ -10,6 +10,6 @@
  */
 
 return [
-    'plugins_index' => '登入到 US3C 後臺',
+    'plugins_index' => '登入到 US3C 後台',
     'log_in'        => '登入',
 ];
